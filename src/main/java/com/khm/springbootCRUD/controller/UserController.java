@@ -20,7 +20,7 @@ public class UserController {
 
     @GetMapping("/")
     public String home() {
-        return "createForm";
+        return "createUser";
     }
 
     @PostMapping("/")
