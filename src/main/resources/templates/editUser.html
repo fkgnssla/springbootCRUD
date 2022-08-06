@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Title</title></head>
+<body>
+<h2>User 수정 (Update)</h2>
+<form action="/user/edit" method="post" th:object="${user}">
+    <p>ID: <input type="text" th:field="*{id}" size="15" readonly>
+    <p>이름: <input type="text" th:field="*{name}" size="15">
+    <p>나이: <input type="text" th:field="*{age}" size="15">
+    <p>주소: <input type="text" th:field="*{address}" size="15">
+    <p><input type="submit" value="User 수정">
+</form>
+</body>
+</html>
